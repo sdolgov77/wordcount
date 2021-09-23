@@ -2,15 +2,13 @@ package main
 
 import (
   "fmt"
-  "flag"
+  "os"
 )
 
 func main() {
-  flag.Parse()
-  a := flag.Args()
-  if len(a)<1 || a[0]=="''" {
+  if len(os.Args)<2 || os.Args[1]=="''" {
     fmt.Println(0)
   } else {
-    fmt.Println(len(a))
+    fmt.Println(len(os.Args)-1)
   }
 }  
