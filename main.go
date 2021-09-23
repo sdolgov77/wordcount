@@ -11,4 +11,5 @@ func main() {
   } else {
     fmt.Println(len(os.Args)-1)
   }
+  os.Exit(0)
 }  
