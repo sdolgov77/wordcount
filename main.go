@@ -1,10 +1,16 @@
 package main
 
 import (
-  "os"
   "fmt"
+  "flag"
 )
 
 func main() {
-  fmt.Println(len(os.Args)-1)
+  flag.Parse()
+  a := flag.Args()
+  if len(a)<1 || a[0]=="''" {
+    fmt.Println(0)
+  } else {
+    fmt.Println(len(a))
+  }
 }  
