@@ -9,7 +9,7 @@ func main() {
   if len(os.Args)<2{
     fmt.Println(0)
   } else if len(os.Args)==2 {
-      fmt.Println(1)
+      fmt.Println(3)
   } else {
     fmt.Println(len(os.Args)-1)
   }
