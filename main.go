@@ -10,7 +10,7 @@ func main() {
   if len(os.Args)<2{
     fmt.Println(0)
   } else if len(os.Args)==2 {
-    if os.Args[1]=="''" { 
+    if os.Args[1]=="" { 
       fmt.Println(0)
     } else {
       strs := strings.Split(os.Args[1], " ")
