@@ -16,4 +16,4 @@ jobs:
             - name: Test
               run: |
                   go build .
-                  ./wordcount '1'
+                  ./wordcount '' | grep -E "^0$"
